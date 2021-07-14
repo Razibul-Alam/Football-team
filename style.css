@@ -1,4 +1,4 @@
-/* remove default margin padding  */
+remove default margin padding 
 *{
     box-sizing: border-box;
     padding: 0;
@@ -212,62 +212,25 @@ text-align: center;
 }
 /* *****footer section end */
  
-
-
-
-
-
-
-
-
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-}
-.footer-container{
-    height: 13.3rem;
-width: 30.25rem;
-border-radius: 0px;
-text-align: center;
-
-}
-.ball img{
-    max-width: 100%;
-}
-.icon img{
-    width:10%;
-}
-
-  span img{
-      width: 3.75rem;
-  }
-   /* .time{
-      font-size: 2rem;
-      border: 2px solid gray;
-      border-radius: 0.625rem;
-  } */
   
-/* media query */
-@media (max-width:660px) {
+/********* media query for mobile responsive ********/
+
+@media (max-width:760px) {
     .main-container{
         max-width: 100%;
     }
-    .top-one{
+    .players-section{
         grid-template-columns: 1fr;
-        width: auto;
+        width: 100%;
+        margin: auto;
         
     }
-    .top-three{
-        flex-direction: column;
-    }
+   
     .navbar{
         grid-template-columns: 1fr;
         max-width: 100%;
         margin: auto;
-        /* text-align: center; */
+        
 
     }
     .next-matches{
@@ -275,8 +238,9 @@ text-align: center;
     }
     .player-div{
         
-        
+        width: 100%;
        margin-left: 0;
+       padding: 50px 0px;
        
         
     }
@@ -286,8 +250,7 @@ text-align: center;
     
     .header-image{
        
-        /* width: 329px;
-        height: 259.17px; */
+        
         max-width: 100%;
         text-align: center;
         margin: auto;
@@ -320,3 +283,5 @@ width: auto;
         width: 50%;
     }
 }
+
+/* *******reponsive tablet****** */
