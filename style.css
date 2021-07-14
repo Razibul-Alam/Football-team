@@ -1,4 +1,4 @@
-remove default margin padding */
+/* remove default margin padding  */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -16,114 +16,69 @@ body{
     padding: 0;
     
 }
-
+/* *******container width set****** */
 .main-container{
     max-width: 1300px;
-    
     margin: auto;
-   
-   
-}
-
+   }
+/* **********header section start */
 .navbar{
 background: #562EFF;
 width: 1300px;
 position: relative;
 padding: 80px 0px;
- 
 display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.header-image{
-    /* position: absolute; */
-    /* height: 27.375;
-width: 34.75rem; */
-Width :556.01px;
-Height :438px;
-
-border-radius: 0px;
-
-}
-.header-image img{
-    Width :556.01px;
-Height :438px;
-transition: 2s;
-}
-.header-image:hover img{
-    transform: translateY(-70px) rotate(70deg) ;
-    width: 80%;
-    
-}
+/* *******header text set****** */
 .header-text{
-    /* position: absolute; */
     height: 12.5rem;
 width: 30.3rem;
 text-align: center;
 border-radius: nullpx;
-
 }
 .header-text h2{
     font-family: Poppins;
 font-size: 3rem;
 font-style: normal;
 font-weight: 700;
-/* line-height: 5rem; */
-/* letter-spacing: 0px; */
-
-
 }
 
-.match-image img{
-    width: 30%;
+/* ********header image size set */
+.header-image{
+Width :556.01px;
+Height :438px;
+border-radius: 0px;
 }
-.match-image span{
-    padding: 10px;
+
+.header-image img{
+    Width :556.01px;
+Height :438px;
+transition: 2s;
 }
-.icon span{
-    font-size: 2rem;
-    padding: 10px;
+/* *******header image hover set****** */
+.header-image:hover img{
+    transform: translateY(-70px) rotate(70deg) ;
+    width: 80%;
+    
 }
-.copyright span{
-    font-size: 20px;
-}
- button{
-     width: 10.5rem;
-     height: 2.5rem;
-     background-color: #E02C6D;
-     color: white;
- }
+/* *********header section end******* */
 
-
-
-/* navbar end */
-
-/* main section start */
+/* *****main setion set */
 main{
-    
-    
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.top-one{
-    /* max-width: 62.63rem; */
-    /* margin: auto; */
+/* ******** players section start */
+.players-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
     width: 1100px;
    padding: 50px 0;
-    
     margin: auto;
-    /* padding: 4.37rem; */
-    
-    
-    
-
-    
-    
-}
+    }
 .player-div{
     /* height: 29.63rem;
     width: 20.25rem; */
@@ -132,25 +87,98 @@ main{
     border-radius: 0px;
     text-align: center;
     margin-left: 14px;
-    /* border: 5px solid #dddddd; */
-   
-   
-    
 }
+
 .player-div img{
     width: 100%;
-    /* margin-right: 0.625rem; */
-   
 }
+/* **********players section end */
+/* *******static sectio start used for creating table and progress bar */
 .statistic{
     max-width: 1100px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 60px;
-    padding: 50px 0;
+    padding: 70px 0;
     margin: 30px 0;
     margin: auto;
 }
+/* table set */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0.5rem;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(2) {
+    background-color: green;
+  }
+  /* statistic section end */
+
+/* ****** next match and stadium image set */
+.next-matches{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+    margin: 1.25rem 0;
+    background-color: honeydew;
+    }
+.next-match{
+    text-align: center;
+    padding: 2rem;
+    }
+ .match-text{
+     font-size: 20px;
+     margin-top: 20px;
+     
+ }
+ .match-text button{
+     margin-top: 5px;
+ }
+ .vs{
+    font-size: 2rem;
+    border: 2px solid gray;
+    border-radius: 0.625rem;
+    margin-bottom: 20px;
+}
+button{
+    width: 10.5rem;
+    height: 2.5rem;
+    background-color: #E02C6D;
+    color: white;
+}
+.stadium{
+position: relative;
+opacity: 0.7;
+margin: 10px;
+}
+
+.stadium img{
+   width: 100%;
+}
+
+.match-image img{
+    width: 20%;
+}
+.match-image span{
+    padding: 10px;
+}
+
+/* *******next match and stadium section end */
+
+/* *****footer section start */
+
 .footer{
     display: flex;
     justify-content: center;
@@ -171,58 +199,57 @@ text-align: center;
     width:10%;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 0.5rem;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  tr:nth-child(2) {
-    background-color: green;
-  }
   span img{
       width: 3.75rem;
   }
-   .time{
+
+.icon span{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.copyright span{
+    font-size: 20px;
+}
+/* *****footer section end */
+ 
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.footer-container{
+    height: 13.3rem;
+width: 30.25rem;
+border-radius: 0px;
+text-align: center;
+
+}
+.ball img{
+    max-width: 100%;
+}
+.icon img{
+    width:10%;
+}
+
+  span img{
+      width: 3.75rem;
+  }
+   /* .time{
       font-size: 2rem;
       border: 2px solid gray;
       border-radius: 0.625rem;
-  }
-  .next-match{
-     text-align: center;
-     padding: 2rem;
-     
-  }
-  .match-text{
-      
-  }
-.next-matches{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    text-align: center;
-    padding: 3rem;
-    margin: 1.25rem 0;
-    background-color: honeydew;
-    
-}
-.stadium{
-position: relative;
-opacity: 0.7;
-}
-
-.stadium img{
-    width: 100%;
-}
+  } */
+  
 /* media query */
 @media (max-width:660px) {
     .main-container{
