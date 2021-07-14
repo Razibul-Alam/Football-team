@@ -36,8 +36,9 @@ display: grid;
 }
 .header-image{
     /* position: absolute; */
-    height: 27.375;
-width: 34.75rem;
+    /* height: 27.375;
+width: 34.75rem; */
+
 
 border-radius: 0px;
 
@@ -223,6 +224,24 @@ font-size: 1.5rem;
     }
     .player-div img{
         max-width: 100%;
+    }
+    .navbar{
+        margin: auto;
+    }
+    .header-image{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-image img{
+width: 100%;
+    }
+    .header-text h2{
+        font-size: 2rem;
     }
     .footer{
         width: 100%;
