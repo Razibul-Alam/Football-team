@@ -29,7 +29,7 @@ body{
 background: #562EFF;
 width: 1300px;
 position: relative;
-
+padding: 80px 0px;
  
 display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,6 +47,12 @@ border-radius: 0px;
 .header-image img{
     Width :556.01px;
 Height :438px;
+transition: 2s;
+}
+.header-image:hover img{
+    transform: translateY(-70px) rotate(70deg) ;
+    width: 80%;
+    
 }
 .header-text{
     /* position: absolute; */
@@ -67,6 +73,19 @@ font-weight: 700;
 
 }
 
+.match-image img{
+    width: 30%;
+}
+.match-image span{
+    padding: 10px;
+}
+.icon span{
+    font-size: 2rem;
+    padding: 10px;
+}
+.copyright span{
+    font-size: 20px;
+}
  button{
      width: 10.5rem;
      height: 2.5rem;
@@ -92,9 +111,10 @@ main{
     /* margin: auto; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     width: 1100px;
-    background-color: hotpink;
+   padding: 50px 0;
+    
     margin: auto;
     /* padding: 4.37rem; */
     
@@ -135,6 +155,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 .footer-container{
     height: 13.3rem;
