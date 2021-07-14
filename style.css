@@ -38,34 +38,41 @@ display: grid;
     /* position: absolute; */
     /* height: 27.375;
 width: 34.75rem; */
-
+Width :556.01px;
+Height :438px;
 
 border-radius: 0px;
 
 }
 .header-image img{
-    width: 100%;
+    Width :556.01px;
+Height :438px;
 }
 .header-text{
     /* position: absolute; */
     height: 12.5rem;
 width: 30.3rem;
-
+text-align: center;
 border-radius: nullpx;
 
 }
 .header-text h2{
     font-family: Poppins;
-font-size: 4rem;
+font-size: 3rem;
 font-style: normal;
 font-weight: 700;
 /* line-height: 5rem; */
-letter-spacing: 0px;
+/* letter-spacing: 0px; */
 
 
 }
 
- 
+ button{
+     width: 10.5rem;
+     height: 2.5rem;
+     background-color: #E02C6D;
+     color: white;
+ }
 
 
 
@@ -115,7 +122,15 @@ main{
     /* margin-right: 0.625rem; */
    
 }
-
+.statistic{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 60px;
+    padding: 50px 0;
+    margin: 30px 0;
+    margin: auto;
+}
 .footer{
     display: flex;
     justify-content: center;
@@ -150,6 +165,9 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  tr:nth-child(2) {
+    background-color: green;
+  }
   span img{
       width: 3.75rem;
   }
@@ -180,18 +198,7 @@ table {
 position: relative;
 opacity: 0.7;
 }
-.text-float{
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 5.625rem;
-text-align: center;
-color:red;
-z-index: 2;
-font-weight: 800;
-font-size: 1.5rem;
 
-}
 .stadium img{
     width: 100%;
 }
@@ -234,10 +241,12 @@ font-size: 1.5rem;
         /* width: 329px;
         height: 259.17px; */
         max-width: 100%;
+        text-align: center;
+        margin: auto;
         
     }
     .header-image img{
-width: 100%;
+width: auto;
     }
     .header-text {
         /* height: 138px;
@@ -245,12 +254,21 @@ width: 100%;
         max-width: 100%;
         
         border-radius: nullpx;
+        text-align: start;
+        padding-left: 15px;
           
+    }
+    .statistic{
+        grid-template-columns: 1fr;
+        margin: auto;
     }
     .header-text h2{
         font-size: 1.5rem;
     }
     .footer{
         width: 100%;
+    }
+    .footer-container img{
+        width: 50%;
     }
 }
